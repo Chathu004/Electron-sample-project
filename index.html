@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
   <title>To Do List App</title>
   <link rel="stylesheet"  href="style.css">
 </head>
@@ -15,10 +15,17 @@
       <h2>To Do List <img src="img/bookIcn.png" width="50" height="50"></h2>
       <div class="row">
         <input type="text" id="input-box" placeholder="Add your text">
-        <button type="button">Add</button>
+        <button onclick="addTask()">Add</button>
       </div>
+      <ul id="list-container">
+        <!-- <li class="checked">Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li> -->
+      </ul>
     </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
